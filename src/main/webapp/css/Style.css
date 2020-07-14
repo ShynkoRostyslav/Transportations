@@ -1,0 +1,56 @@
+H1 {
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+
+body {
+    background-color: #ffa502;
+
+}
+
+
+.box {
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #786fa6;
+}
+
+input[type="text"], input[ type="password"] {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background: #303952;
+    border: 2px solid #3742fa;
+    border-radius: 24px;
+    padding: 20px 50px;
+    outline: white;
+    color: white;
+
+
+}
+
+input[type="text"]:focus, input[ type="password"]:focus {
+    width: 380px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    border: 2px solid #9b59b6;
+    border-radius: 24px;
+    padding: 20px 50px;
+    outline: white;
+    color: white;
+
+
+}
+

@@ -1,0 +1,102 @@
+body {
+    background-color: #e67e22;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+
+.container{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #786fa6;
+    
+}
+input[type="text"], input[type="password"] {
+    margin: 20px 30px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ff9f1a;
+    border-radius: 24px;
+    outline: white;
+}
+
+input[type="submit"] {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    border: 2px solid #9b59b6;
+    border-radius: 24px;
+    padding: 20px 50px;
+    outline: white;
+    color: white;
+}
+
+
+
+
+.container i{
+    position: absolute;
+  margin-top: 35px;
+  visibility: hidden;
+}
+.container small{
+    visibility: hidden;
+    position: absolute;
+margin-top:   60px;
+right: 300px;
+
+
+}
+ 
+input.slark{
+border-color: green;
+
+
+}
+
+input.sven.m{
+border-color:red;
+
+}
+i.fa-check-circle{
+color: green;
+visibility: visible;
+
+}
+i.fa-exclamation-circle{
+color:red;
+visibility: visible;
+
+}
+small.userError {
+visibility: visible;
+color: red;
+
+
+}
+small.ageError{
+visibility: visible;
+color:red;
+
+}
+small.surnameError{
+visibility: visible;
+color: red;
+
+
+}
+small.passwordError{
+    visibility: visible;
+    color: red;
+
+
+}
+
+

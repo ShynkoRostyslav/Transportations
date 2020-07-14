@@ -1,0 +1,42 @@
+Configutation:
+  name: Default
+  Properties:
+    Property:
+      name: log-path
+      value: D:\Logs\LOG.log
+  Appenders:
+    Console:
+      name: Console_Appender
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+    File:
+      name: File_Appender
+      fileName: ${log-path}/logfile.log
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+    RollingFile:
+      name: RELL
+      fileName: ${log-path}/ROlling.log
+      filePattern: ${log-path}/archive/rolFile3-%d{yy-MM-dd}.log
+      PatternLayout:
+        pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"
+      Policies:
+        TimeBasedTriggeringPolicy:
+          interval: 1
+          modulate: true
+
+  Loggers:
+    Root:
+      level: debug
+      AppenderRef:
+        - ref: Console_Appender
+        - ref : RELL
+
+    Logger:
+      - name: com.main
+        level: debug
+        AppenderRef:
+          - ref:  Console_Appender
+            level: debug
+          - ref: RELL
